@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="da">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Port folio Projekt</title>
+        <link rel="stylesheet" href="gron.css">
+        <link href="https://fonts.googleapis.com/css?family=Parisienne|Tinos&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div>
+            <section class="container">
+                <header class="header" id="header">
+                    <img src="MRH.jpg" alt="MRH-logo" class="logo">
+                </header>
+                <section id="navi">
+                    <ul class="sidenav">
+                        <li class="dropdown">
+                            <a href="Index.html" >
+                                <p>Forside</p>
+                            </a>
+                        </li>
+                        <li class=dropdown>
+                            <a>
+                                <p>Kommunikation</p>    
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="bmc.html">Business Model Canvas</a>
+                                <a href="kommunikationsteori.html">Kommunikationsteori</a>
+                                <a href="testproduktion.html">Tekstprodution</a>
+                                <a href="testmetoder.html">Testmetoder</a>
+                                <a href="kvantitativogkvalitativ.html">Kvantitativ og Kvalitativ metode</a>
+                                <a href="praesentationstknik.html">Præsentationsteknik</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a>
+                                <p>Design</p>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="farvelaere.html">Farver</a>
+                                <a href="typografi.html">Typografi</a>
+                                <a href="gestaltlove.html">Gestalt loven</a>
+                                <a href="photoshop.html">Adobe Photoshop</a>
+                                <a href="illustrastor.html">Adobe Illustrator</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a>
+                                <p>Webudvikling</p>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="html.html">HTML</a>
+                                <a href="css.html">CSS</a>
+                                <a href="grid.html">Grids og Responsivt</a>
+                            </div>
+                        </li>
+                        <li class="dropdown">
+                            <a>
+                                <p>Projekter</p>
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="designthinking.html">DesignThinking Projekt</a>
+                                <a href="onepage.html">OnePage Projekt</a>
+                                <a href="portfolio.html">Port folio Projekt</a>
+                            </div>
+                        </li>
+                    </ul>
+                </section> <!--navi slutter-->
+            <section class="indhold">
+                <h1>CSS</h1>
+                <p>
+                    CSS er forkortelsen af Casacading Style Sheets, selvom HTML understøtter, styles af hjemmesider, så bruger man CSS til at, da selve CSS er lavet som et sprog til at beskrive udseendet af hjemmesiden, det gør det at man bedre kan adskille strukturen og udseendet.<br><br>
+                    I 1994 udvirkede Håkon Wium Lie CSS, Håkon arbejdede på det tidspunkt på CERN. På det tidspunkt blev internettet brugt som en platform til elektronisk udgivelse, men der manglede en vigtig del da der på ingen måde var mulighed for at style det på. 
+                </p>
+                <div>
+                    <h2>CSS syntaks</h2>
+                    <p>
+                        Når man skal starte med at style, bruger man det er hedder en selector. En selector er, hvad der skal styles f.eks. 
+                        a { background-color: green;}<br>
+                        Så I dette tilfælde er selector a, man kan sagtens vælge flere der selector, hvis man gerne vil havde at flere elementer på siden skal se ens ud. <br>
+                        Når man så har valgt hvilken selector man skal style laver man declaration eller som Niels sagde Tuborg tegnet eller klemme parentes  {. De betyder at her starter man med at definer hvilken type styles man skal bruge, men kan skal huske at når man er færdig med at style den selector så slutter man også med et declaration ( } ) Så skal man vælge hvad man gerne vil style, det kan være alt fra fonten, til størrelsen på fonten, til baggrundsfarven, til om marginen skal havde en bestemt størrelse. Når man så har valgt hvilken styles man går med slutter man med kolon, hvor man så kan vælge ud af hvilken styles man har valgt, f.eks. har jeg valgt at det er baggrundsfarven jeg gerne vil lave om, så kommer er enden en masse farver frem eller så kan  man skrive farvekoder i stedet for som kan være:<br><br>
+                        RGB: rgb (255,204,0)<br>
+                        HSL: hsl (48% 100% 50%)<br>
+                        HEX-kode: #ffcc00<br><br>
+                        I det man så har fundet den farve man skal bruge, eller valgt den størrelse man vælger, skal man afslutte med semikolon ; for at vise at man er færdig med denne styles, hvis man ikke laver den, kan det betyde at den styles ordre ikke fungerer. 
+                    </p>
+                    
+                    <h2>Selectors </h2>
+                    <p>
+                        Det finde mange selectors men de tre primære er:   
+                    </p>
+                    <ul>
+                        <li>
+                            Type/element selector som er de almindelige tags, altså p, h1-h6 og body
+                        </li>
+                        <li>
+                            Id selector som er når man har et helt specifikt element man vil style. Man skal huske at man først i HTML skal lave id  ved at skrive &#8249;img id=” og så navnet på id”&#8250; og efterfølgende i CSS start med et hashtag og så navnet på id’en.
+                        </li>
+                        <li>
+                            Class selector som er til når man style flere elementer af gangen som skal være ens, det vil sige at i HTMLen skal man også mærke de elementer med et tags f.eks. &#8249;p class=”underoverskrift”&#8250;, og derefter i CSS istedetfor hashtag som man skulle i Id, så skal man starte med et punktum .underoverskrift. 
+                        </li>
+                    </ul>
+                    <h2>Kaskaderegler</h2>
+                    <p>
+                        I CSS er kaskaderegler meget vigtige. Ved hjælp af dem fortæller man hvilken af reglerne der er vigtigst og hvilken der er mindre vigtigst. Hvis man f.eks. bruger et tag som !important i CSS, så ville den selector om det står ved, havde mest betydning. <br>
+                        Hvis man så ikke bruger !important, så er det altid den tags der står øverste der altid vinder.
+                    </p>
+                    <h2>Rammerne</h2>
+                    <p>
+                        Når man er i gang med at style hjemmesiden findes der usynlige rammer, som  man kan gøre synlig de er:
+                    </p>
+                    <img src="box.jpg" alt="box" class="billede">
+                    <ul>
+                        <li>
+                            Content som er den inderste. Det er her alt indholdet befinder sig som f.eks. kan være tekst, billede eller grafik.
+                        </li>
+                        <li>
+                            Padding som er den næste, det er her man kan bestemme afstanden mellem selve indholdet om rammen. Så indholdet ikke ligger helt op af rammen.
+                        </li>
+                        <li>
+                            Border som er selve rammen, her man kan man bestemmer og den skal ses eller være usynlig, og man kan vælge tykkelsen og udseendet om på den.
+                        </li>
+                        <li>
+                            Margin , er så afstanden mellem ramme og det element som grænser op til rammen.
+                        </li>
+                    </ul>
+                    <p id="kilder"><i>Kilder: www.w3schools.com og Niels's undervisning.</i></p>
+                </div>
+                <br><br><br><br>
+            </section> <!--Indhold slutter-->
+            <footer>
+            <p>&copy; Maria Rosager-Hansen 2019-2020</p>
+            </footer>
+            </section> <!--Container slutter-->
+        </div>
+    </body>
+</html>
