@@ -1,0 +1,249 @@
+
+/*---------Mobile--------*/
+body{
+    margin:0;
+}
+header{
+    background-color: black;
+}
+
+h1{
+    font-family: 'Parisienne', cursive;
+    font-size:3em;
+    text-align: center;
+}
+h2, h3, h4{
+    text-align: center;
+}
+h2{
+    font-size: 1.5em;
+}
+
+
+p,h2,h3,h4,il,ul{
+    font-family: 'Tinos', serif;
+}
+
+#indhold{
+    margin: 10px;
+}
+.indhold{
+    margin: 0 35px;
+}
+footer{
+    text-align: center;
+    background-color: black;
+    color:white;
+    display: block;
+    bottom: 0px;
+    width: 100%;
+    font-size: 1em;
+    position: fixed;
+    clear: both;
+}
+#citat{
+    text-align: center;
+}
+/*----Grundlæggende----*/
+#imktekst{
+    text-align: center;
+}
+/*-----Typografi-----*/
+#sansserif{
+    font-family: sans-serif;
+}
+#serif{
+    font-family: serif;
+}
+#typografi{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+}
+/*---Illustrastor----*/
+.illu{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*-------billeder------*/
+#Maria{
+    width: 20%;
+    height: auto;
+    text-align: center;
+    
+}
+.logo{
+    width: 50%;
+    height:auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    
+}
+#gestalt{
+    width: 40%;
+    height: auto;
+    display: block;
+    margin:auto
+}
+.billede{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.billeder{
+    width: 75%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#farvehjul{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin:auto
+}
+/*--Grid---*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header"
+        "navi"
+        "a"
+        "b"
+        "c"
+        "d"
+        "e"
+        "footer"
+}
+#header{
+    grid-area: header;
+}
+#navi{
+    grid-area: navi;
+}
+#felt1{
+    grid-area: a;
+    text-align: center;
+}
+#felt2{
+    grid-area: b;
+}
+#felt3{
+    grid-area: c;
+}
+#felt4{
+    grid-area: d;
+}
+#felt5{
+    grid-area: e;
+}
+#footer{
+    grid-area: footer;
+}
+/*---Navigations baren---*/
+.sidenav {
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: #333;
+    padding: 0 10px;
+
+}
+ul li p{
+    color:white;
+    font-size: 14px;
+}
+    
+ul.sidenav li.right {
+    float: center;
+}
+.sidenav li {
+    float: center;
+}
+    
+.sidenav li a{
+    display: block;
+    text-align: center;
+    padding: 10px 8px;
+    text-decoration: none;
+}
+.sidenav li a:hover{
+    background-color: black;
+    color: white;
+}   
+
+li.dropdown {
+    display:inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: black;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/*----------Tablet--------*/
+@media screen and (min-width: 425px){
+/*---Illustrastor----*/
+.illu{
+    display:inline-block;    
+}
+
+}
+/*---------Laptop--------*/
+@media screen and (min-width: 800px){
+
+    h1{
+        font-size: 3em;   
+    }
+    p,ul,ol{
+        font-size: 1.1em;   
+    }
+    .indhold{
+        margin: 0 150px;
+    }
+ /*----Billeder---*/   
+.billede{
+    width: 25%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.billeder{
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+    }
+    
